@@ -1,24 +1,566 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V47-2i-BLE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Signup-->
+        <scene sceneID="c1L-vs-cRg">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="evU-YC-pQc" customClass="SignupViewController" customModule="Friendji" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vHV-Wd-dn9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDn-j6-4cU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ovg-97-VcL" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="513.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aPr-OU-MZH">
+                                                <rect key="frame" x="16" y="16" width="343" height="481.5"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d4A-LX-I0u">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                                        <segments>
+                                                            <segment title="Male"/>
+                                                            <segment title="Female"/>
+                                                        </segments>
+                                                    </segmentedControl>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name and Lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VPu-Gg-1pS">
+                                                        <rect key="frame" x="0.0" y="36" width="343" height="30"/>
+                                                        <color key="backgroundColor" name="FJDarkYellow"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="evU-YC-pQc" id="zlI-fq-0VV"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IDy-wp-5PJ">
+                                                        <rect key="frame" x="0.0" y="74" width="343" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDz-qx-zgd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="28"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="FJDarkGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-Zo-djg">
+                                                                <rect key="frame" x="38" y="0.0" width="305" height="29"/>
+                                                                <segments>
+                                                                    <segment title="18-22"/>
+                                                                    <segment title="23-25"/>
+                                                                    <segment title="26-30"/>
+                                                                    <segment title="31-40"/>
+                                                                </segments>
+                                                            </segmentedControl>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Favorite Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xVr-mj-NsU">
+                                                        <rect key="frame" x="0.0" y="110" width="343" height="30"/>
+                                                        <color key="backgroundColor" name="FJDarkYellow"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="evU-YC-pQc" id="Ocj-B0-ypu"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Favorite Fruit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-bA-ZTq">
+                                                        <rect key="frame" x="0.0" y="148" width="343" height="30"/>
+                                                        <color key="backgroundColor" name="FJDarkYellow"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="evU-YC-pQc" id="u9z-oL-kCv"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Awk-qQ-ca2">
+                                                        <rect key="frame" x="0.0" y="186" width="343" height="30"/>
+                                                        <color key="backgroundColor" name="FJDarkYellow"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="evU-YC-pQc" id="23s-0E-KNi"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ND-C8-X3K">
+                                                        <rect key="frame" x="0.0" y="224" width="343" height="30"/>
+                                                        <state key="normal" title="Add Picture"/>
+                                                        <connections>
+                                                            <action selector="addPictureButtonDidTapped:" destination="evU-YC-pQc" eventType="touchUpInside" id="Tv6-Rf-dDr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UYf-8e-MTg" customClass="RoundableImageView" customModule="Friendji" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="262" width="343" height="171.5"/>
+                                                        <color key="backgroundColor" name="FJDarkYellow"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="UYf-8e-MTg" secondAttribute="height" multiplier="2:1" id="cnm-zg-rE9"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucj-SM-IRP" customClass="RoundableButton" customModule="Friendji" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="441.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="35P-ju-G0j"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <state key="normal" title="Signup">
+                                                            <color key="titleColor" name="FJYellow"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="signupButtonDidTapped:" destination="evU-YC-pQc" eventType="touchUpInside" id="YS0-tw-Uot"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="aPr-OU-MZH" secondAttribute="bottom" constant="16" id="N3s-er-8HL"/>
+                                            <constraint firstItem="aPr-OU-MZH" firstAttribute="top" secondItem="Ovg-97-VcL" secondAttribute="top" constant="16" id="Zel-OW-zPL"/>
+                                            <constraint firstAttribute="trailing" secondItem="aPr-OU-MZH" secondAttribute="trailing" constant="16" id="cbx-Vr-Ai4"/>
+                                            <constraint firstItem="aPr-OU-MZH" firstAttribute="leading" secondItem="Ovg-97-VcL" secondAttribute="leading" constant="16" id="gOm-z2-uEX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ovg-97-VcL" firstAttribute="width" secondItem="UDn-j6-4cU" secondAttribute="width" id="Fh4-Tu-TYO"/>
+                                    <constraint firstItem="Ovg-97-VcL" firstAttribute="top" secondItem="UDn-j6-4cU" secondAttribute="top" id="XNn-Ow-hFl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ovg-97-VcL" secondAttribute="bottom" id="cLW-Wl-aUX"/>
+                                    <constraint firstItem="Ovg-97-VcL" firstAttribute="leading" secondItem="UDn-j6-4cU" secondAttribute="leading" id="cqG-Ps-EWM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ovg-97-VcL" secondAttribute="trailing" id="imH-Ds-FFi"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" name="FJYellow"/>
+                        <constraints>
+                            <constraint firstItem="UDn-j6-4cU" firstAttribute="bottom" secondItem="iDy-mb-D2b" secondAttribute="bottom" id="V6R-U2-qin"/>
+                            <constraint firstItem="UDn-j6-4cU" firstAttribute="top" secondItem="iDy-mb-D2b" secondAttribute="top" id="aC8-AI-Sa1"/>
+                            <constraint firstItem="UDn-j6-4cU" firstAttribute="leading" secondItem="iDy-mb-D2b" secondAttribute="leading" id="r0y-XK-gL7"/>
+                            <constraint firstItem="UDn-j6-4cU" firstAttribute="trailing" secondItem="iDy-mb-D2b" secondAttribute="trailing" id="yKd-2w-jrQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iDy-mb-D2b"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Signup" id="3dh-Lc-f48">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="iAY-mf-Fk1">
+                            <connections>
+                                <action selector="cancelButtonDidTapped:" destination="evU-YC-pQc" id="p12-ku-gKl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ageSegmentedControl" destination="R3u-Zo-djg" id="zBC-Pn-zZW"/>
+                        <outlet property="bottomConstraint" destination="V6R-U2-qin" id="E15-S8-wOh"/>
+                        <outlet property="favoriteColortextField" destination="xVr-mj-NsU" id="FPk-9G-Dvm"/>
+                        <outlet property="favoriteFruitTextField" destination="eAf-bA-ZTq" id="cmI-2j-i7B"/>
+                        <outlet property="genderSegmentedControl" destination="d4A-LX-I0u" id="1fh-bd-UhH"/>
+                        <outlet property="nameTextField" destination="VPu-Gg-1pS" id="MXO-kc-xfQ"/>
+                        <outlet property="phoneNumberTextField" destination="Awk-qQ-ca2" id="Vdx-BK-vjh"/>
+                        <outlet property="pictureImageView" destination="UYf-8e-MTg" id="qOi-Vt-c8U"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3or-yw-ijg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="926" y="-899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SFm-nW-s6f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tEJ-f3-hi6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xxi-6U-z5w">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="FJYellow"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="evU-YC-pQc" kind="relationship" relationship="rootViewController" id="1ag-DM-zcO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K86-fV-FDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="-899"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="hOS-vl-9B1">
+            <objects>
+                <viewController id="V47-2i-BLE" customClass="HomeViewController" customModule="Friendji" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LuI-nI-qF7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3UU-7l-Jup">
+                                <rect key="frame" x="16" y="197" width="343" height="273"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="MhE-BQ-rvJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="98.5"/>
+                                        <subviews>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xzj-nB-4wU" customClass="EmojiView" customModule="Friendji" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="98.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Xzj-nB-4wU" secondAttribute="height" id="iDM-Di-vuJ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEyesOpen" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" name="FJDarkYellow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
+                                                        <real key="value" value="-1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="eyeBrowTilt">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1iU-LD-SOI" customClass="EmojiView" customModule="Friendji" customModuleProvider="target">
+                                                <rect key="frame" x="122.5" y="0.0" width="98" height="98.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1iU-LD-SOI" secondAttribute="height" id="Yp1-D9-MvO"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEyesOpen" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" name="FJDarkYellow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="eyeBrowTilt">
+                                                        <real key="value" value="-1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="otD-vZ-k7T" customClass="EmojiView" customModule="Friendji" customModuleProvider="target">
+                                                <rect key="frame" x="244.5" y="0.0" width="98.5" height="98.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="otD-vZ-k7T" secondAttribute="height" id="INJ-Wd-sDM"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEyesOpen" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" name="FJDarkYellow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="eyeBrowTilt">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yI-sL-n5W" customClass="PlayButton" customModule="Friendji" customModuleProvider="target">
+                                        <rect key="frame" x="121.5" y="114.5" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="D5O-P9-aS6"/>
+                                            <constraint firstAttribute="width" secondItem="4yI-sL-n5W" secondAttribute="height" id="HQS-oB-8Fc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" name="FJYellow"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playButtonDidTapped:" destination="V47-2i-BLE" eventType="touchUpInside" id="58R-de-pRo"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="if two person have the same taste in emoji, they should be friend 😍" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9K-BZ-Osa">
+                                        <rect key="frame" x="7" y="230.5" width="329.5" height="42.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" name="FJDarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="MhE-BQ-rvJ" secondAttribute="trailing" id="S8a-2B-oWv"/>
+                                    <constraint firstItem="MhE-BQ-rvJ" firstAttribute="leading" secondItem="3UU-7l-Jup" secondAttribute="leading" id="wGH-Sc-eNm"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="FJYellow"/>
+                        <constraints>
+                            <constraint firstItem="3UU-7l-Jup" firstAttribute="centerY" secondItem="LuI-nI-qF7" secondAttribute="centerY" id="JtK-iF-p4d"/>
+                            <constraint firstItem="3UU-7l-Jup" firstAttribute="leading" secondItem="0Tl-kL-18h" secondAttribute="leading" constant="16" id="Nqg-Ds-Jw2"/>
+                            <constraint firstItem="0Tl-kL-18h" firstAttribute="trailing" secondItem="3UU-7l-Jup" secondAttribute="trailing" constant="16" id="oTT-Y7-OE7"/>
+                            <constraint firstItem="3UU-7l-Jup" firstAttribute="centerX" secondItem="LuI-nI-qF7" secondAttribute="centerX" id="xsh-oM-IVq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Tl-kL-18h"/>
+                    </view>
+                    <connections>
+                        <segue destination="tEJ-f3-hi6" kind="presentation" identifier="ShowSignupViewControllerID" id="aMe-XA-QNH"/>
+                        <segue destination="f5C-B8-DHg" kind="presentation" identifier="ShowGameViewControllerID" id="Nla-Vr-VgG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2K5-ZA-gYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-834" y="-550"/>
+        </scene>
+        <!--Prize View Controller-->
+        <scene sceneID="Lxt-fJ-hM6">
+            <objects>
+                <viewController id="KGj-sE-ycs" customClass="PrizeViewController" customModule="Friendji" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V8T-SC-pM5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="duB-uB-Xqx">
+                                <rect key="frame" x="16" y="286.5" width="343" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b42-3a-uX6">
+                                        <rect key="frame" x="146.5" y="0.0" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="FJDarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uli-He-cD8">
+                                        <rect key="frame" x="103.5" y="58" width="136" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <color key="textColor" name="FJYellow"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="exM-Pq-bWA">
+                                <rect key="frame" x="16" y="607" width="343" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yU-mf-CmQ" customClass="RoundableButton" customModule="Friendji" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9pa-B6-E6A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Not Interested">
+                                            <color key="titleColor" name="FJYellow"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="notInterestedButtonDidTapped:" destination="KGj-sE-ycs" eventType="touchUpInside" id="gfp-lt-jaJ"/>
+                                            <segue destination="Ikb-7W-4yR" kind="unwind" identifier="unwindToHomeViewControllerWithSegueID" unwindAction="unwindToHomeViewControllerWithSegue:" id="6KU-2T-jmJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61D-In-Q2z" customClass="RoundableButton" customModule="Friendji" customModuleProvider="target">
+                                        <rect key="frame" x="175.5" y="0.0" width="167.5" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9oO-6e-9nF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Continue">
+                                            <color key="titleColor" name="FJYellow"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="continueButtonDidTapped:" destination="KGj-sE-ycs" eventType="touchUpInside" id="F8i-jY-K4m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6BZ-nL-bku" customClass="RoundableImageView" customModule="Friendji" customModuleProvider="target">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6BZ-nL-bku" secondAttribute="height" id="oTj-Yl-XJQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6BZ-nL-bku" firstAttribute="centerY" secondItem="V8T-SC-pM5" secondAttribute="centerY" id="0nU-6V-Ewb"/>
+                            <constraint firstItem="exM-Pq-bWA" firstAttribute="leading" secondItem="WBT-g8-gL0" secondAttribute="leading" constant="16" id="425-7e-slW"/>
+                            <constraint firstItem="duB-uB-Xqx" firstAttribute="centerX" secondItem="V8T-SC-pM5" secondAttribute="centerX" id="4Bv-lr-f6c"/>
+                            <constraint firstItem="WBT-g8-gL0" firstAttribute="bottom" secondItem="exM-Pq-bWA" secondAttribute="bottom" constant="20" id="NZt-TK-lZj"/>
+                            <constraint firstItem="WBT-g8-gL0" firstAttribute="trailing" secondItem="6BZ-nL-bku" secondAttribute="trailing" constant="16" id="UUT-Ea-09P"/>
+                            <constraint firstItem="WBT-g8-gL0" firstAttribute="trailing" secondItem="duB-uB-Xqx" secondAttribute="trailing" constant="16" id="Yoc-aB-j2K"/>
+                            <constraint firstItem="6BZ-nL-bku" firstAttribute="leading" secondItem="WBT-g8-gL0" secondAttribute="leading" constant="16" id="hDN-9x-RZ9"/>
+                            <constraint firstItem="WBT-g8-gL0" firstAttribute="trailing" secondItem="exM-Pq-bWA" secondAttribute="trailing" constant="16" id="o6n-2J-Meo"/>
+                            <constraint firstItem="duB-uB-Xqx" firstAttribute="centerY" secondItem="V8T-SC-pM5" secondAttribute="centerY" id="qiX-TX-Bfr"/>
+                            <constraint firstItem="6BZ-nL-bku" firstAttribute="centerX" secondItem="V8T-SC-pM5" secondAttribute="centerX" id="r3w-hN-0yS"/>
+                            <constraint firstItem="duB-uB-Xqx" firstAttribute="leading" secondItem="WBT-g8-gL0" secondAttribute="leading" constant="16" id="vhh-NZ-teU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WBT-g8-gL0"/>
+                    </view>
+                    <connections>
+                        <outlet property="discriptioLabel" destination="Uli-He-cD8" id="I3g-WE-fmh"/>
+                        <outlet property="imageView" destination="6BZ-nL-bku" id="7uV-T9-9og"/>
+                        <outlet property="titleLabel" destination="b42-3a-uX6" id="Ic9-Vx-dH0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysh-b0-qjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ikb-7W-4yR" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="925.60000000000002" y="-174.06296851574214"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="dLJ-eg-dz1">
+            <objects>
+                <viewController id="f5C-B8-DHg" customClass="GameViewController" customModule="Friendji" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KGI-Vq-2bJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BwK-kb-73G">
+                                <rect key="frame" x="16" y="46.5" width="343" height="574"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💛💛💛" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn3-TE-bLc">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="erB-ta-aBQ" customClass="EmojiView" customModule="Friendji" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="59" width="343" height="343"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="erB-ta-aBQ" secondAttribute="height" id="e30-K0-dKM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isEyesOpen" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" name="FJDarkGray"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bQj-KP-q6f">
+                                        <rect key="frame" x="0.0" y="418" width="343" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="tFt-CZ-R9g">
+                                                <rect key="frame" x="0.0" y="7" width="45" height="86"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eybrow" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wV-Ko-MyU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="FJDarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eye" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrq-Kp-pLa">
+                                                        <rect key="frame" x="0.0" y="35" width="45" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="FJDarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouth" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdM-vK-MeJ">
+                                                        <rect key="frame" x="0.0" y="70" width="45" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="FJDarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Q1-nv-eVN">
+                                                <rect key="frame" x="53" y="0.0" width="290" height="100"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="08i-kh-9el">
+                                                        <rect key="frame" x="0.0" y="0.0" width="290" height="29"/>
+                                                        <segments>
+                                                            <segment title="Normal"/>
+                                                            <segment title="Relax"/>
+                                                            <segment title="Frown"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="eybrowSegmentedControlDidShange:" destination="f5C-B8-DHg" eventType="valueChanged" id="22h-O6-6uJ"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RIR-ao-4qs">
+                                                        <rect key="frame" x="0.0" y="36" width="290" height="29"/>
+                                                        <segments>
+                                                            <segment title="Close"/>
+                                                            <segment title="Open"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="eyeSegmentedControlDidChange:" destination="f5C-B8-DHg" eventType="valueChanged" id="Kvg-MK-Z8W"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KRc-wK-SPj">
+                                                        <rect key="frame" x="0.0" y="72" width="290" height="29"/>
+                                                        <segments>
+                                                            <segment title="Nutral"/>
+                                                            <segment title="Smile"/>
+                                                            <segment title="Frown"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="mouthSegmentedCOntrolDidChange:" destination="f5C-B8-DHg" eventType="valueChanged" id="dsC-cK-Kay"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biq-pZ-VEb" customClass="RoundableButton" customModule="Friendji" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="534" width="343" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lcC-VZ-92l"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Submit Emoji">
+                                            <color key="titleColor" name="FJYellow"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitEmojiButtonDidTapped:" destination="f5C-B8-DHg" eventType="touchUpInside" id="E2I-5I-DA4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bQj-KP-q6f" firstAttribute="leading" secondItem="BwK-kb-73G" secondAttribute="leading" id="6c7-SX-Geq"/>
+                                    <constraint firstItem="erB-ta-aBQ" firstAttribute="width" secondItem="erB-ta-aBQ" secondAttribute="height" id="JBs-Cy-pq0"/>
+                                    <constraint firstAttribute="trailing" secondItem="bQj-KP-q6f" secondAttribute="trailing" id="dp0-tl-no8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="FJYellow"/>
+                        <constraints>
+                            <constraint firstItem="BwK-kb-73G" firstAttribute="leading" secondItem="LCy-y4-OXA" secondAttribute="leading" constant="16" id="7xv-Sx-sKq"/>
+                            <constraint firstItem="LCy-y4-OXA" firstAttribute="trailing" secondItem="BwK-kb-73G" secondAttribute="trailing" constant="16" id="Qn2-i2-cJE"/>
+                            <constraint firstItem="BwK-kb-73G" firstAttribute="centerY" secondItem="KGI-Vq-2bJ" secondAttribute="centerY" id="xfV-h6-UJF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LCy-y4-OXA"/>
+                    </view>
+                    <connections>
+                        <outlet property="emojiView" destination="erB-ta-aBQ" id="jPB-Vb-awN"/>
+                        <outlet property="heartsLabel" destination="pn3-TE-bLc" id="7dK-Tu-VLb"/>
+                        <segue destination="KGj-sE-ycs" kind="presentation" identifier="ShowPrizeViewControllerID" id="8Vv-zW-P6s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmH-IZ-Fyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="-173"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="FJDarkGray">
+            <color red="0.19607843137254902" green="0.19607843137254902" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FJDarkYellow">
+            <color red="0.86274509803921573" green="0.70588235294117652" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FJYellow">
+            <color red="0.94117647058823528" green="0.78431372549019607" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

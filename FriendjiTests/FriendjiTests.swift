@@ -6,29 +6,39 @@
 //  Copyright © 2019 kasraabasi. All rights reserved.
 //
 
+/// for savaing time i am wring test just for GameViewModelTests
+
 import XCTest
 @testable import Friendji
 
-class FriendjiTests: XCTestCase {
+class GameViewModelTests: XCTestCase {
+    
+    // MARK: - Properties
+    var sut: GameViewModel?
 
+    
+    
+    // MARK: - Overrides
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        let player = Player(gender: .male, name: "name", age: .a, favoriteColor: "color", favoriteFruit: "fruit", phoneNumber: "phone number", pictureImageURL: "url")
+        let gameModel = GameModel(hearts: .three, gameResult: .nameSharing, player: player, isMatch: true)
+        sut = GameViewModel(gameModel: gameModel)
     }
-
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        super.tearDown()
+    }
+    
+    
+    
+    // MARK: - Methods
+    func testHeartStringReturnCorrectString() {
+        XCTAssertEqual(sut?.heartsString, "❤️❤️❤️", "heartsString not working")
+        sut?.gameModel.hearts = .one
+        XCTAssertEqual(sut?.heartsString, "❤️💛💛", "heartsString not working")
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }

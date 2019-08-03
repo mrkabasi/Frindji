@@ -1,0 +1,15 @@
+
+{
+    "hearts": 2,
+    "gameResult": 3,
+    "player": {
+        "gender": 0,
+        "name": "John Appleseed",
+        "age": 2,
+        "favoriteColor": "Dark Sky Blue",
+        "favoriteFruit": "Watermelon",
+        "phoneNumber": "+9809122222222",
+        "pictureImageURL": "https://radioimg.s3.amazonaws.com/931wolfcountry/styles/delta__775x515/s3/s3fs-public/Blogs/dreamstime_m_11658264.jpg?itok=-b2sErey",
+    },
+    "isMatch": true
+}

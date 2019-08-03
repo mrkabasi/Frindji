@@ -7,12 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99196C2422F4EAEE009AA1B6 /* NetworkingDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C2322F4EAEE009AA1B6 /* NetworkingDataService.swift */; };
+		99196C2622F4F450009AA1B6 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C2522F4F450009AA1B6 /* NetworkController.swift */; };
+		99196C2A22F504B9009AA1B6 /* WebServiceNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C2922F504B9009AA1B6 /* WebServiceNetworkController.swift */; };
+		99196C2C22F504D0009AA1B6 /* MockWebServiceNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C2B22F504D0009AA1B6 /* MockWebServiceNetworkController.swift */; };
+		99196C2E22F50894009AA1B6 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C2D22F50894009AA1B6 /* SignUpModel.swift */; };
+		99196C3522F50C94009AA1B6 /* signup.json in Resources */ = {isa = PBXBuildFile; fileRef = 99196C3422F50C94009AA1B6 /* signup.json */; };
+		99196C3B22F5B0F4009AA1B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C3A22F5B0F4009AA1B6 /* HomeViewController.swift */; };
+		99196C3D22F5BB1B009AA1B6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C3C22F5BB1B009AA1B6 /* GameViewController.swift */; };
+		99196C3F22F5BDFE009AA1B6 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C3E22F5BDFE009AA1B6 /* GameModel.swift */; };
+		99196C4122F5BF9E009AA1B6 /* stage0.json in Resources */ = {isa = PBXBuildFile; fileRef = 99196C4022F5BF9E009AA1B6 /* stage0.json */; };
+		99196C4522F5C29F009AA1B6 /* stage1.json in Resources */ = {isa = PBXBuildFile; fileRef = 99196C4422F5C29F009AA1B6 /* stage1.json */; };
+		99196C4722F5C2D5009AA1B6 /* stage2.json in Resources */ = {isa = PBXBuildFile; fileRef = 99196C4622F5C2D5009AA1B6 /* stage2.json */; };
+		99196C4922F5C2F7009AA1B6 /* stage3.json in Resources */ = {isa = PBXBuildFile; fileRef = 99196C4822F5C2F7009AA1B6 /* stage3.json */; };
+		99196C4B22F5C359009AA1B6 /* stage4.json in Resources */ = {isa = PBXBuildFile; fileRef = 99196C4A22F5C359009AA1B6 /* stage4.json */; };
+		99196C4D22F5C3DC009AA1B6 /* stage5.json in Resources */ = {isa = PBXBuildFile; fileRef = 99196C4C22F5C3DC009AA1B6 /* stage5.json */; };
+		99196C4F22F5C4BA009AA1B6 /* stage6.json in Resources */ = {isa = PBXBuildFile; fileRef = 99196C4E22F5C4BA009AA1B6 /* stage6.json */; };
+		99196C5122F5FC56009AA1B6 /* PrizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C5022F5FC56009AA1B6 /* PrizeViewController.swift */; };
+		99196C5522F6237C009AA1B6 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C5422F6237C009AA1B6 /* UIImageView+Extension.swift */; };
+		99196C5822F6269F009AA1B6 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99196C5722F6269F009AA1B6 /* GameViewModel.swift */; };
 		99BAC8B222F4661900552FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8B122F4661900552FA9 /* AppDelegate.swift */; };
-		99BAC8B422F4661900552FA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8B322F4661900552FA9 /* ViewController.swift */; };
 		99BAC8B722F4661900552FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BAC8B522F4661900552FA9 /* Main.storyboard */; };
 		99BAC8B922F4661B00552FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BAC8B822F4661B00552FA9 /* Assets.xcassets */; };
 		99BAC8BC22F4661B00552FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BAC8BA22F4661B00552FA9 /* LaunchScreen.storyboard */; };
 		99BAC8C722F4661B00552FA9 /* FriendjiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8C622F4661B00552FA9 /* FriendjiTests.swift */; };
+		99BAC8D522F466B800552FA9 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BAC8D422F466B800552FA9 /* Color.xcassets */; };
+		99BAC8D722F4699D00552FA9 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8D622F4699D00552FA9 /* EmojiView.swift */; };
+		99BAC8D922F46C7400552FA9 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8D822F46C7400552FA9 /* EmojiModel.swift */; };
+		99BAC8DC22F470DA00552FA9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8DB22F470DA00552FA9 /* Constant.swift */; };
+		99BAC8E222F4771000552FA9 /* RoundableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8E122F4771000552FA9 /* RoundableView.swift */; };
+		99BAC8E422F4802500552FA9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8E322F4802500552FA9 /* SignupViewController.swift */; };
+		99BAC8E622F4B26500552FA9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAC8E522F4B26500552FA9 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +51,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99196C2322F4EAEE009AA1B6 /* NetworkingDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingDataService.swift; sourceTree = "<group>"; };
+		99196C2522F4F450009AA1B6 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		99196C2922F504B9009AA1B6 /* WebServiceNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceNetworkController.swift; sourceTree = "<group>"; };
+		99196C2B22F504D0009AA1B6 /* MockWebServiceNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebServiceNetworkController.swift; sourceTree = "<group>"; };
+		99196C2D22F50894009AA1B6 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		99196C3422F50C94009AA1B6 /* signup.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = signup.json; sourceTree = "<group>"; };
+		99196C3A22F5B0F4009AA1B6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		99196C3C22F5BB1B009AA1B6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		99196C3E22F5BDFE009AA1B6 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		99196C4022F5BF9E009AA1B6 /* stage0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stage0.json; sourceTree = "<group>"; };
+		99196C4422F5C29F009AA1B6 /* stage1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stage1.json; sourceTree = "<group>"; };
+		99196C4622F5C2D5009AA1B6 /* stage2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stage2.json; sourceTree = "<group>"; };
+		99196C4822F5C2F7009AA1B6 /* stage3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stage3.json; sourceTree = "<group>"; };
+		99196C4A22F5C359009AA1B6 /* stage4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stage4.json; sourceTree = "<group>"; };
+		99196C4C22F5C3DC009AA1B6 /* stage5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stage5.json; sourceTree = "<group>"; };
+		99196C4E22F5C4BA009AA1B6 /* stage6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stage6.json; sourceTree = "<group>"; };
+		99196C5022F5FC56009AA1B6 /* PrizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeViewController.swift; sourceTree = "<group>"; };
+		99196C5422F6237C009AA1B6 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		99196C5722F6269F009AA1B6 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		99BAC8AE22F4661900552FA9 /* Friendji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friendji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BAC8B122F4661900552FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99BAC8B322F4661900552FA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99BAC8B622F4661900552FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99BAC8B822F4661B00552FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99BAC8BB22F4661B00552FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +79,13 @@
 		99BAC8C222F4661B00552FA9 /* FriendjiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendjiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BAC8C622F4661B00552FA9 /* FriendjiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendjiTests.swift; sourceTree = "<group>"; };
 		99BAC8C822F4661B00552FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99BAC8D422F466B800552FA9 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		99BAC8D622F4699D00552FA9 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		99BAC8D822F46C7400552FA9 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
+		99BAC8DB22F470DA00552FA9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		99BAC8E122F4771000552FA9 /* RoundableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundableView.swift; sourceTree = "<group>"; };
+		99BAC8E322F4802500552FA9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		99BAC8E522F4B26500552FA9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +106,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99196C2222F4EA15009AA1B6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				99196C2322F4EAEE009AA1B6 /* NetworkingDataService.swift */,
+				99196C2522F4F450009AA1B6 /* NetworkController.swift */,
+				99196C2B22F504D0009AA1B6 /* MockWebServiceNetworkController.swift */,
+				99196C2922F504B9009AA1B6 /* WebServiceNetworkController.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		99196C2722F4FE40009AA1B6 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				99BAC8D822F46C7400552FA9 /* EmojiModel.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		99196C2822F4FE47009AA1B6 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				99BAC8E522F4B26500552FA9 /* Player.swift */,
+				99196C2D22F50894009AA1B6 /* SignUpModel.swift */,
+				99196C3E22F5BDFE009AA1B6 /* GameModel.swift */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		99196C3322F50C03009AA1B6 /* MockJSON */ = {
+			isa = PBXGroup;
+			children = (
+				99196C3422F50C94009AA1B6 /* signup.json */,
+				99196C4022F5BF9E009AA1B6 /* stage0.json */,
+				99196C4422F5C29F009AA1B6 /* stage1.json */,
+				99196C4622F5C2D5009AA1B6 /* stage2.json */,
+				99196C4822F5C2F7009AA1B6 /* stage3.json */,
+				99196C4A22F5C359009AA1B6 /* stage4.json */,
+				99196C4C22F5C3DC009AA1B6 /* stage5.json */,
+				99196C4E22F5C4BA009AA1B6 /* stage6.json */,
+			);
+			path = MockJSON;
+			sourceTree = "<group>";
+		};
+		99196C5622F62688009AA1B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				99196C5722F6269F009AA1B6 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		99BAC8A522F4661900552FA9 = {
 			isa = PBXGroup;
 			children = (
@@ -77,10 +179,17 @@
 		99BAC8B022F4661900552FA9 /* Friendji */ = {
 			isa = PBXGroup;
 			children = (
-				99BAC8B122F4661900552FA9 /* AppDelegate.swift */,
-				99BAC8B322F4661900552FA9 /* ViewController.swift */,
 				99BAC8B522F4661900552FA9 /* Main.storyboard */,
+				99BAC8B122F4661900552FA9 /* AppDelegate.swift */,
+				99BAC8D322F4664100552FA9 /* Model */,
+				99196C5622F62688009AA1B6 /* ViewModel */,
+				99BAC8D222F4663B00552FA9 /* View */,
+				99BAC8D122F4663000552FA9 /* Controller */,
+				99196C2222F4EA15009AA1B6 /* Networking */,
+				99BAC8DA22F470C800552FA9 /* Utility */,
+				99196C3322F50C03009AA1B6 /* MockJSON */,
 				99BAC8B822F4661B00552FA9 /* Assets.xcassets */,
+				99BAC8D422F466B800552FA9 /* Color.xcassets */,
 				99BAC8BA22F4661B00552FA9 /* LaunchScreen.storyboard */,
 				99BAC8BD22F4661B00552FA9 /* Info.plist */,
 			);
@@ -94,6 +203,44 @@
 				99BAC8C822F4661B00552FA9 /* Info.plist */,
 			);
 			path = FriendjiTests;
+			sourceTree = "<group>";
+		};
+		99BAC8D122F4663000552FA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99BAC8E322F4802500552FA9 /* SignupViewController.swift */,
+				99196C3A22F5B0F4009AA1B6 /* HomeViewController.swift */,
+				99196C3C22F5BB1B009AA1B6 /* GameViewController.swift */,
+				99196C5022F5FC56009AA1B6 /* PrizeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99BAC8D222F4663B00552FA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99BAC8D622F4699D00552FA9 /* EmojiView.swift */,
+				99BAC8E122F4771000552FA9 /* RoundableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99BAC8D322F4664100552FA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99196C2722F4FE40009AA1B6 /* Internal */,
+				99196C2822F4FE47009AA1B6 /* External */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99BAC8DA22F470C800552FA9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				99BAC8DB22F470DA00552FA9 /* Constant.swift */,
+				99196C5422F6237C009AA1B6 /* UIImageView+Extension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +325,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				99BAC8BC22F4661B00552FA9 /* LaunchScreen.storyboard in Resources */,
+				99196C4F22F5C4BA009AA1B6 /* stage6.json in Resources */,
+				99196C4722F5C2D5009AA1B6 /* stage2.json in Resources */,
+				99BAC8D522F466B800552FA9 /* Color.xcassets in Resources */,
+				99196C4B22F5C359009AA1B6 /* stage4.json in Resources */,
+				99196C3522F50C94009AA1B6 /* signup.json in Resources */,
+				99196C4D22F5C3DC009AA1B6 /* stage5.json in Resources */,
 				99BAC8B922F4661B00552FA9 /* Assets.xcassets in Resources */,
+				99196C4122F5BF9E009AA1B6 /* stage0.json in Resources */,
 				99BAC8B722F4661900552FA9 /* Main.storyboard in Resources */,
+				99196C4922F5C2F7009AA1B6 /* stage3.json in Resources */,
+				99196C4522F5C29F009AA1B6 /* stage1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +353,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BAC8B422F4661900552FA9 /* ViewController.swift in Sources */,
+				99196C5822F6269F009AA1B6 /* GameViewModel.swift in Sources */,
+				99196C3D22F5BB1B009AA1B6 /* GameViewController.swift in Sources */,
+				99196C3F22F5BDFE009AA1B6 /* GameModel.swift in Sources */,
+				99196C2622F4F450009AA1B6 /* NetworkController.swift in Sources */,
+				99196C2A22F504B9009AA1B6 /* WebServiceNetworkController.swift in Sources */,
+				99196C2E22F50894009AA1B6 /* SignUpModel.swift in Sources */,
+				99BAC8D922F46C7400552FA9 /* EmojiModel.swift in Sources */,
+				99BAC8E422F4802500552FA9 /* SignupViewController.swift in Sources */,
+				99BAC8E622F4B26500552FA9 /* Player.swift in Sources */,
+				99BAC8DC22F470DA00552FA9 /* Constant.swift in Sources */,
+				99BAC8E222F4771000552FA9 /* RoundableView.swift in Sources */,
+				99196C3B22F5B0F4009AA1B6 /* HomeViewController.swift in Sources */,
+				99196C2422F4EAEE009AA1B6 /* NetworkingDataService.swift in Sources */,
 				99BAC8B222F4661900552FA9 /* AppDelegate.swift in Sources */,
+				99196C5122F5FC56009AA1B6 /* PrizeViewController.swift in Sources */,
+				99BAC8D722F4699D00552FA9 /* EmojiView.swift in Sources */,
+				99196C5522F6237C009AA1B6 /* UIImageView+Extension.swift in Sources */,
+				99196C2C22F504D0009AA1B6 /* MockWebServiceNetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
